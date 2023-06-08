@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge-a-sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Boogaloo&family=Dancing+Script&family=Montserrat&family=Rock+Salt&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>EDGE-A-SKETCH</h1>
+    </div>
+    <div class="content">
+        <div class="buttons">
+            <div class="slid">
+                <div class="gridval">
+                    <label id="slidlabel" for="slider" class="gridval">Grid Size: <p id='slidvalue' class="gridval">30 X
+                            30</p> </label>
+                </div>
+                <input type="range" id="slider" class="slider" min="2" max="80" value="30">
+            </div>
+            <button class="reset"> Reset</button>
+            <div class="cselec">
+                <label id="fcol" for="favcolor">Select a color manually: </label>
+                <input type="color" id="favcolor" name="favcolor" value="#000000">
+            </div>
+            <button id="rainbow" class="colorselec">Rainbow</button>
+            <button id="eraser" class="colorselec">Eraser</button>
+            <button id="remborder">Remove gridlines</button>
+        </div>
+        <div class="wrapper">
+            <div id="container">
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/khushahali-chauhan-0aa10122a/">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/khushahalichauhan">GitHub</a>
+        <a class="footer-link" href="https://www.instagram.com/khushahalichauhan">Instagram</a>
+        <p class="copyright">© Khushahali Chauhan.</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
